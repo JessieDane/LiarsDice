@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>skeleton liarsDice</title>
+    <link href="..//quar/LDstyles.css" rel="stylesheet">
+    <link href="javascript.ico" rel="icon" type="image/x-icon">
+    <script src="LDJSindex.js" defer></script>
+    
+</head>
+
+<body>
+
+    <div class="widthance">
+        <div id="ohyeah"> (✿◡‿◡) </div>
+        <div>
+            <span id="dice1Cpu" class="diceCpu"></span>
+            <span id="dice2Cpu" class="diceCpu"></span>
+            <span id="dice3Cpu" class="diceCpu"></span>
+            <span id="dice4Cpu" class="diceCpu"></span>
+            <span id="dice5Cpu" class="diceCpu"></span>
+            </div>
+        <div>        
+            <span id="dice1P" class="diceP"></span>
+            <span id="dice2P" class="diceP"></span>
+            <span id="dice3P" class="diceP"></span>
+            <span id="dice4P" class="diceP"></span>
+            <span id="dice5P" class="diceP"></span>
+            </div>
+        <div> 
+            <span>Current Bet: </span>
+            <span id="currentBetquantity"></span>
+            <span id="currentBetNum"></span>
+        </div>
+        <div class="actionField">
+            <button id="callLiar" class="button">Call Liar</button>
+            <div>
+                <input type="number" id="newBetQuantity" class="inputfield" min="1" max="6" placeholder="quantity">
+                <input type="number" id="newBetNum" class="inputfield" min="1" max="6" placeholder="dice number">
+            </div>    
+            <button id="newBetButton" class="button" >New Bet</button>
+        </div>
+        
+        <div>
+            <button id="startGameButton" class="button">Click here to play a round</button>
+            <button id="quit" class="button">Quit</button>
+        </div>
+    </div>
+<div class="terminal">
+    <p>this is the terminal, here msges will be displayed</p>
+    <p>1. throughout, Num will refer to the number on the face of a dice.</p>
+
+</div>
+
+</body>
+
+</html>

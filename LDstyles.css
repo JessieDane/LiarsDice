@@ -1,0 +1,63 @@
+/*logo*/
+#ohyeah {
+    font-size: xx-large;
+    background-color: none;
+    color: rgb(76, 13, 225);
+    margin: 0 auto;
+}
+/*terminal*/
+.terminal {
+    border: 2px dashed hotpink;
+    border-radius: 25px;
+    height: 4em;
+}
+
+div p:first-child {
+    background: blue;
+    color: azure;
+}
+
+div p {
+    font-size: small;
+}
+
+
+/*to be ordered further*/
+body {
+    background: honeydew;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+
+}
+
+.widthance {
+    background: rgba(21, 255, 0, 0.345);
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input { 
+    width: 8em;
+}
+
+.diceCpu {
+    width: 10px;
+    background-color: brown;
+    color: aqua;
+
+}
+
+.diceP {
+    width: 10px;
+    background-color: aqua;
+    color: brown;
+}
+
+.actionfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
