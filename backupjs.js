@@ -17,9 +17,6 @@ let dice4Cpu = document.getElementById("dice4Cpu");
 let dice5Cpu = document.getElementById("dice5Cpu");
 //dice array
 let tableArray = [];//length = amount of players * 5
-// random dice throw "1-6"
-let randomDice;
-//
 //who turn it is ( relates to decision making phase)
 let turnholder = 1;
 //betting
@@ -44,7 +41,7 @@ let inputQuantity = document.getElementById("newBetQuantity");
 let inputNum = document.getElementById("newBetNum");
 
 
-//
+//currently looking for a way to implement cpu behavior --------------------------======
 
 //click events //need to find a way to toggle buttons, later
 startRoundBtn.onclick = setDiceFunction;     //button to throw dices
@@ -77,7 +74,6 @@ function setDiceFunction() {    //sets the dice into an array
     //quick var testing
     console.log(tableArray + " Array");
     console.log(tableArray.length + " array length");
-        
 };
 
 function makingBetFunction() { //tries to make a bet
@@ -90,14 +86,10 @@ function makingBetFunction() { //tries to make a bet
             currentBetNumDice = newBetNumDice;
             currentBetQuantitySpan.innerText = currentBetQuantityDice+"x";
             currentBetNumSpan.innerText = currentBetNumDice+"'s";
-            
-            turnholder = 0; // because now the other has to make a decision
-            
         };
     } else {
         alert("invalid entry, Agent Smith. please try again");
     }
-    
 };
 
     //challengeCounter
@@ -133,35 +125,3 @@ function quitFunction() { //quit button :)
     alert("lol, no.");
     console.log("user tried to leave..");
 };
-
-function randomDiceThrow() {
-    randomDice = Math.floor(Math.random() * 6 + 1);
-    console.log(randomDice + " random dice");
-};
-
-
-/* trial builds */
-function trialcpubehavior() {
-    console.log("trial");
-    if (turnholder === 0) { // if it is not, it will exit function and let player do things
-        randomDiceThrow;
-        console.log(randomDice + " random dice");
-        if( randomDice % 2 === 0 ) {
-            
-            console.log("call liar function");
-        } else {
-
-            console.log("make bet");
-        }
-    };
-};
-
-
-function trialbetbuttondisable() {
-    if (parseInt(inputQuantity.value) >= 1 && parseInt(inputNum.value) >= 1 || parseInt(inputQuantity.value) <= 6 && parseInt(inputNum.value) <= 6 ) {
-        newBetBtn.disabled = false;
-    } //newBetBtn.disabled = true; to reset button
-}
-
-
-

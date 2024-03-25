@@ -10,6 +10,10 @@
     border: 2px dashed hotpink;
     border-radius: 25px;
     height: 4em;
+    padding: 0.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 div p:first-child {
