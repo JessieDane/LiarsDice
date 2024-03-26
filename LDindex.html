@@ -14,14 +14,14 @@
 
     <div class="widthance">
         <div id="ohyeah"> (✿◡‿◡) </div>
-        <div>
+        <div id="cpudice">
             <span id="dice1Cpu" class="diceCpu"></span>
             <span id="dice2Cpu" class="diceCpu"></span>
             <span id="dice3Cpu" class="diceCpu"></span>
             <span id="dice4Cpu" class="diceCpu"></span>
             <span id="dice5Cpu" class="diceCpu"></span>
             </div>
-        <div>        
+        <div id="playerdice">        
             <span id="dice1P" class="diceP"></span>
             <span id="dice2P" class="diceP"></span>
             <span id="dice3P" class="diceP"></span>
@@ -34,10 +34,10 @@
             <span id="currentBetNum"></span>
         </div>
         <div class="actionField">
-            <button id="callLiar" class="button">Call Liar</button>
+            <button id="callLiar" class="button" disabled>Call Liar</button>
             <div>
-                <input type="number" id="newBetQuantity" class="inputfield" min="1" max="6" placeholder="quantity">
-                <input type="number" id="newBetNum" class="inputfield" min="1" max="6" placeholder="dice number">
+                <input type="number" id="newBetQuantity" class="inputfield" min="1" max="6" placeholder="quantity" disabled>
+                <input type="number" id="newBetNum" class="inputfield" min="1" max="6" placeholder="dice number" disabled>
             </div>    
             <button id="newBetButton" class="button" disabled>New Bet</button>
         </div>
@@ -50,6 +50,7 @@
 <div class="terminal">
     <p>this is the terminal, here msges will be displayed</p>
     <p>1. throughout, Num will refer to the number on the face of a dice.</p>
+    <p>2. currently a skeleton is working, it still needs mods and tuning.</p>
 
 </div>
 

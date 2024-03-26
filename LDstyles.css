@@ -23,6 +23,7 @@ div p:first-child {
 
 div p {
     font-size: small;
+    margin: 0;
 }
 
 
