@@ -19,6 +19,7 @@
 div p:first-child {
     background: blue;
     color: azure;
+    border-radius: 25px;
 }
 
 div p {
@@ -52,13 +53,14 @@ input {
     width: 10px;
     background-color: brown;
     color: aqua;
-
+    margin: 0.2em;
 }
 
 .diceP {
     width: 10px;
     background-color: aqua;
     color: brown;
+    margin: 0.2em;
 }
 
 .actionfield {
